@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>VIVAZ</h1>
+        <nav class="header">
+            <ul type="square">
+                <li> <a href="#idadeInput">VALIDE</a></li>
+                <li> <a href="#fashion">CONHEÇA</a></li>
+                <li> <a href="#favourite">COMPRE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div id="valide">
+            <h2>Validação. </h1>
+                <p>Insira a sua idade: </p>
+                <input type="number" name="" id="idadeInput">
+                <button onclick="verificarIdade()">Verificar</button>
+     </div>  
+       <div class="fundo">     
+        <img src="./img/ballena-removebg-preview.png" alt="ballena">
+    </div>
+    </div>
+
+
+    <script>
+
+        function verificarIdade() {
+            const idade = parseInt(document.getElementById("idadeInput").value);
+
+            if (idade >= 18) {
+                window.location.href = "permitido.html";
+
+            }
+
+            else {
+                window.location.href = "npermitido.html";
+            }
+
+
+
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
